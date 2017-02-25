@@ -1,0 +1,14 @@
+git clone https://github.com/xemul/criu
+git clone https://github.com/xemul/p.haul
+
+pip2.7 install ipaddr requests flask protobuf google psutil
+
+cd criu
+make install -j5
+
+cp -R pycriu /usr/lib/python2.7/site-packages/
+
+cd ../p.haul
+python2 setup.py install
+
+echo Done!  Now edit p-haul/service/wrap to python2

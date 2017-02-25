@@ -1,0 +1,7 @@
+
+rm -rf criu
+rm -rf p.haul
+
+pacman -Sy --noconfirm wget unzip autoconf automake libbsd git make gcc python python2 pkg-config asciidoc xmlto protobuf protobuf-c python2-setuptools python2-pip
+
+echo Thanks!  Now go back to standard user and run getCriu
